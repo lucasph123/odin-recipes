@@ -1,0 +1,77 @@
+.titulo {
+   text-align: center;
+   margin: 30px;
+   border: solid red;
+}
+
+.receita
+{
+    border: 2px solid red;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+}
+
+.receita-box
+{
+
+    text-align:center;
+    border: 2px solid red;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    display:inline-block;
+}
+
+img{
+    margin: auto;
+    height:200px;
+    width: auto;
+    display: block;
+
+}
+
+.butao {
+	background: #1AAB8A;
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 40px;
+	margin-right: 0px;
+	font-size: 18px;
+	padding: 0 1em;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+	transform: translateY(-30px);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4)
+}
+.butao:hover {
+	background: #fff;
+	color: #1AAB8A;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
+	transform: translateY(-33px)
+}
+.butao:before,
+.butao:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #1AAB8A;
+	transition: 200ms ease all
+}
+.butao:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0
+}
+.butao:hover:before,
+.butao:hover:after {
+	width: 100%;
+	transition: 400ms ease all
+}
