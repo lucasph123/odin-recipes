@@ -15,63 +15,75 @@
 
 .receita-box
 {
-
+	position: relative;
     text-align:center;
-    border: 2px solid red;
-    height: 300px;
-    width: 300px;
+
+    height: auto;
+    width: 200px;
     margin: 20px;
     display:inline-block;
 }
+.receita-box:hover img
+
+{
+	opacity: 0.3;
+	
+}
+
+.receita-box:hover .texto
+{
+	opacity: 1;
+	transition: 1500ms;
+}
+
 
 img{
+	box-shadow: 2px 2px gray;
     margin: auto;
-    height:200px;
-    width: auto;
+    height:auto;
+    width: 200px;
     display: block;
-
+	
 }
+
+.texto
+{
+	font-family:Arial, Helvetica, sans-serif;
+	color:yellow;
+	text-shadow: 1px 1px black;
+	display: inline-block;
+	position: absolute;
+	top: 235px;
+	right: 00px;
+	opacity: 0;
+} 
+
+.barra
+{
+	font-size: 20px;
+	background-color: grey;
+	box-shadow: 2px 2px gray;
+	max-width: 200px;
+	height: 30px;
+}
+
+.receita-box:hover .barra
+{
+	background-color: black;
+	color: white;
+	transition: 300ms;
+	height: 100px;
+	font-size:22px;
+	
+}
+
+
+
+
+
+
 
 .butao {
-	background: #1AAB8A;
-	color: #fff;
-	border: none;
-	position: relative;
-	height: 40px;
-	margin-right: 0px;
-	font-size: 18px;
-	padding: 0 1em;
-	cursor: pointer;
-	transition: 800ms ease all;
-	outline: none;
-	transform: translateY(-30px);
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4)
-}
-.butao:hover {
-	background: #fff;
-	color: #1AAB8A;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0);
-	transform: translateY(-33px)
-}
-.butao:before,
-.butao:after {
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	height: 2px;
-	width: 0;
-	background: #1AAB8A;
-	transition: 200ms ease all
-}
-.butao:after {
-	right: inherit;
-	top: inherit;
-	left: 0;
-	bottom: 0
-}
-.butao:hover:before,
-.butao:hover:after {
-	width: 100%;
-	transition: 400ms ease all
+	
+
 }
