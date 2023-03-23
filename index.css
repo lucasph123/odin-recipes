@@ -2,13 +2,12 @@
    text-align: center;
    margin: 30px;
    border: solid red;
+   text-shadow:1px 1px grey;
 }
 
 .receita
 {
     border: 2px solid red;
-    width: auto;
-    height: auto;
     margin: 20px;
     text-align: center;
 }
@@ -16,46 +15,53 @@
 .receita-box
 {
 	position: relative;
-    text-align:center;
-
     height: auto;
-    width: 200px;
+    width: auto;
     margin: 20px;
-    display:inline-block;
+    display: inline-block;
 }
 .receita-box:hover img
 
 {
-	opacity: 0.3;
+	opacity: 0.5;
+	transition: 400ms;
 	
 }
 
 .receita-box:hover .texto
 {
 	opacity: 1;
-	transition: 1500ms;
+	transition: 2000ms;
 }
 
 
+.barra,
 img{
 	box-shadow: 2px 2px gray;
     margin: auto;
     height:auto;
-    width: 200px;
+    width: 250px;
     display: block;
 	
+	
+}
+img
+{
+	border-top-right-radius: 10%;
+	border-top-left-radius: 10%;
 }
 
 .texto
 {
 	font-family:Arial, Helvetica, sans-serif;
 	color:yellow;
-	text-shadow: 1px 1px black;
-	display: inline-block;
+	text-shadow: 1px 1px orange;
+	font-size: 15px;
 	position: absolute;
-	top: 235px;
+	top: 285px;
 	right: 00px;
 	opacity: 0;
+	
 } 
 
 .barra
@@ -65,18 +71,23 @@ img{
 	box-shadow: 2px 2px gray;
 	max-width: 200px;
 	height: 30px;
+	border-bottom-left-radius:10%;
+	border-bottom-right-radius:10%;
+	
 }
 
 .receita-box:hover .barra
 {
 	background-color: black;
 	color: white;
-	transition: 300ms;
+	transition: 700ms;
 	height: 100px;
 	font-size:22px;
+	max-width: 250px;
+	border-top-left-radius: 0%;
+	border-top-right-radius: 0%;
 	
 }
-
 
 
 

@@ -1,0 +1,25 @@
+.menu-inicial
+{
+    position:sticky;
+    top:5px;
+    display: flex;
+    justify-content:center;
+    
+}
+
+
+.nav-item
+{
+    border: 1px solid white;
+    border-bottom: 5px ridge #00ffff;
+    font-size: 25px;
+    text-align:center;
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    color: grey;
+    
+}
+
+
+
